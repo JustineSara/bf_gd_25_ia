@@ -1197,6 +1197,7 @@ Transform:
   - {fileID: 1968361090}
   - {fileID: 776841145}
   - {fileID: 1173233105}
+  - {fileID: 2132033671}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1477715772
@@ -1218,32 +1219,41 @@ MonoBehaviour:
   - rid: 4645555406466974389
   - rid: 4645555406466974390
   - rid: 4645555489608040716
-  - rid: 2074950091090165835
-  - rid: 2074950091306959530
+  - rid: 2074950092134547822
+  - rid: 2074950092134547821
+  - rid: 2074950092134547939
   m_OriginalGraph: {fileID: 0}
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
     version: 2
     RefIds:
-    - rid: 2074950091090165835
-      type: {class: 'BlackboardVariable`1[[System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 14076247755416743753
-          m_Value1: 11733314184659292207
-        Name: Impact
-        m_Value:
-        - {fileID: 1968361087}
-        - {fileID: 776841142}
-    - rid: 2074950091306959530
+    - rid: 2074950092134547821
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
-          m_Value0: 3860484502933152482
-          m_Value1: 7826873814820170327
-        Name: dmgCollider-mass
+          m_Value0: 16842246135361557933
+          m_Value1: 14453751628417866783
+        Name: MassCollider
         m_Value: {fileID: 1904546466}
+    - rid: 2074950092134547822
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 13310340892004203068
+          m_Value1: 7234078572213886505
+        Name: ImpactZone
+        m_Value: {fileID: 2132033670}
+    - rid: 2074950092134547939
+      type: {class: 'BlackboardVariable`1[[System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15232214462563044358
+          m_Value1: 8780162655418642681
+        Name: MassAttack_Effects
+        m_Value:
+        - {fileID: 1968361087}
+        - {fileID: 776841142}
     - rid: 4645555404788990116
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -2110,6 +2120,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2132033670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2132033671}
+  m_Layer: 6
+  m_Name: ImpactShockwave
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2132033671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132033670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.56, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1477715771}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
