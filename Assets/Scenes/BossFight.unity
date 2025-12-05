@@ -297,6 +297,10 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 882221356994568737, guid: 899d0d0f8bb9df542a6f74d441b9d06b, type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 882221356994568739, guid: 899d0d0f8bb9df542a6f74d441b9d06b, type: 3}
       propertyPath: m_Name
       value: LandingSmoke Big
@@ -397,6 +401,11 @@ Transform:
   - {fileID: 1453333792}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &867141890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7559006615654855930, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
+  m_PrefabInstance: {fileID: 933768127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &870499874
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,7 +502,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7559006615654855929, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1904546467}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7559006615654855930, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1173233108}
   m_SourcePrefab: {fileID: 100100000, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
 --- !u!1 &1106991517
 GameObject:
@@ -649,6 +661,19 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 7559006615654855931, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
   m_PrefabInstance: {fileID: 933768127}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1173233108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867141890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33775e40a6ce74e4b91cd8c963f522a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationEventTrigger
+  animationEvent: {fileID: 11400000, guid: 32b5d4db5557ecb47a161dafd8d6554e, type: 2}
 --- !u!1 &1200411951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,13 +1875,13 @@ GameObject:
   - component: {fileID: 1904546467}
   - component: {fileID: 1904546469}
   - component: {fileID: 1904546468}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: WeaponCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1904546467
 Transform:
   m_ObjectHideFlags: 0
